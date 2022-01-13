@@ -1,0 +1,95 @@
+/* Fillimi i pjeses se TEAM-it */
+
+#team{
+	padding: 80px 30px;
+}
+
+.team-info{
+	font-weight: bold;
+	text-align: center;
+}
+
+.team-info h1{
+	font-size: 50px;
+}
+
+.team-info p{
+	font-size: 20px;
+	color: #0C64DC;
+}
+
+.testimonial-row{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.testimonial-col{
+	flex-basis: 28%;
+	padding: 10px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px 3px #00968814;
+	cursor: pointer;
+	transition: transform .5s;
+}
+
+.testimonial-col p{
+	font-size: 14px;
+}
+
+.user{
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+}
+.user img{
+	width: 40px;
+	margin-right: 20px;
+	border-radius: 3px;
+}
+.user-info .fa{
+	margin-left: 10px;
+	color: #27c0ff;
+	font-size: 20px;
+}
+
+.user-info small{
+	color: #0C64DC;
+}
+.testimonial-col:hover{
+	transform: translateY(7px);
+}
+@media screen and (max-width: 770px){
+	.testimonial-col{
+		flex-basis: 100%;
+	}
+}
+
+/* Fundi i pjeses se Skuadres*/
+
+
+
+/* Pjesa e about-us e cards */
+
+.container2 {
+	padding: 2rem;
+	background-color: #fff;
+	border-radius: 2px;
+	line-height: 1.4rem;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+}
+
+.read-more-btn1{
+	color: #0984e3;
+}
+
+.read-more-text--show{
+	display: inline;
+}
+
+
+

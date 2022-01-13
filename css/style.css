@@ -1,0 +1,561 @@
+:root{
+	--mount-meadow:  #1bbc9c;
+	--white-smoke: #f0f0f0;
+	--night-rider: #343434;
+	--black: #191b17;
+	--transition: all 0.5s ease-in-out;
+}
+
+*{
+	font-family: 'Hind Siliguri', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html{
+	color: var(--black);
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.5;
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+}
+
+img{
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: var(--black);
+}
+
+li {
+	list-style-type: none;
+}
+
+
+
+button{
+	cursor: pointer;
+	outline: 0;
+	background: transparent;
+}
+
+.container{
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0.6rem 0;
+	line-height: 1.25;
+	font-weight: 400;
+	text-transform: capitalize;
+}
+
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* pjesa e headerit */
+.header{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../assets/cover2.jpg);
+	min-height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+}
+
+.navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: 999;
+}
+
+.brand-and-toggler{
+	font-size: 1.65rem;
+	padding: 0.8rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-brand{
+	font-weight: 500;
+	color: var(--night-rider);
+}
+
+.navbar-brand span{
+	color: var(--mount-meadow);
+}
+
+.navbar-toggler{
+	border: none;
+	color: #0C64DC!important;
+}
+
+.navbar-nav{
+	margin: 0.2rem 0 0.6rem 0;
+}
+
+.nav-item{
+	padding: 0.6rem 0;
+}
+
+.nav-link{
+	text-transform: uppercase;
+	font-size: 0.95rem;
+	letter-spacing: 1.5px;
+	font-weight: 400;
+	opacity: 0.65;
+	transition: var(--transition);
+}
+
+.nav-link:hover{
+	color: #0C64DC!important;
+}
+
+.navbar-collapse{
+	display: none;
+}
+
+.hero-div{
+	flex: 1;
+	flex-direction: column;
+	text-align: center;
+}
+
+.hero-div h1{
+	font-size: 2.55rem;
+	padding-bottom: 0.4rem;
+}
+
+.hero-div p{
+	color: var(--white-smoke);
+	font-size: 1.05rem;
+	letter-spacing: 3px;
+}
+
+.hero-btns{
+	margin-top: 2.8rem;
+}
+
+.hero-btns button{
+	border: 3.5px solid #fff;
+	border-radius: 2rem;
+	padding: 0.8rem 2rem;
+	text-transform: uppercase;
+}
+
+.btn-trans{
+	color: #fff;
+	transition: var(--transition);
+	display: none;
+}
+
+.btn-trans:hover{
+	background: #247AF0;
+	border-color: var(--mount-meadow);
+}
+
+.btn-white{
+	background: #fff;
+	color: var(--night-rider);
+	transition: var(--transition);
+}
+
+.btn-white:hover{
+	background: transparent;
+	color: #fff;
+}
+
+/* Media Queries */
+@media screen and (min-width: 992px) {
+	.navbar{
+		background: transparent;
+		margin-top: 1.4rem;
+	}
+	.navbar .container{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.navbar-brand{
+		color: var(--white-smoke);
+		font-size: 2rem;
+	}
+	.navbar-toggler{
+		display: none;
+	}
+	.navbar-collapse{
+		display: block!important;
+	}
+	.navbar-nav{
+		display: flex;
+		margin: 0;
+	}
+	.nav-item{
+		margin-left: 1.8rem;
+	}
+	.nav-link{
+		color: var(--white-smoke);
+	}
+	.hero-div h1{
+		font-size: 3.8rem;
+	}
+	.btn-trans{
+		display: inline-block;
+		margin-right: 0.8rem;
+	}
+
+	/* ndryshimi i navbarit */
+	/* nese deshironi qe navbari te jete i bardhe vetem fshini cng- nga 3 klasat e meposhtme */
+	.cng-navbar{
+		-webkit-box-shadow: 0 2px 5px 0 rgba(207,205,207,0.3);
+		-moz-box-shadow:  0 2px 5px 0 rgba(207,205,207,0.3);
+		box-shadow: 0 2px 5px 0 rgba(207, 205, 207, 0.3);
+		margin-top: 0;
+		background: #fff;
+	}
+	.cng-navbar .navbar-brand{
+		color: var(--night-rider);
+	}
+	.cng-navbar .nav-link{
+		color: var(--night-rider);
+	}
+}
+
+/* INTRO pjesa fillon ketu */
+
+#about{
+	padding: 80px 30px;
+}
+
+.section-info{
+	font-weight: bold;
+	text-align: center;
+}
+
+.section-info h1{
+	font-size: 50px;
+}
+
+.section-info p{
+	font-size: 20px;
+	color: #0C64DC;
+}
+
+.about-row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.about-left-col{
+	flex-basis: 50%;
+}
+
+.about-left-col img{
+	width: 60%;
+	padding: 50px;
+}
+
+.about-right-col{
+	flex-basis: 40%;
+}
+
+#p-title{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.about-right-col p{
+	font-size: 18px;
+	text-align: justify;
+}
+
+.read-more-btn{
+	display: inline-block;
+	color: var(--accent);
+	background-color: #eee;
+	padding: 0.6rem 1.5rem;
+	font-size: 1em;
+	position: absolute;
+	z-index: 1;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.read-more-btn:hover{
+	background-color: #fff;
+	box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+	transform: translateY(-3px);
+}
+
+/* INTRO pjesa mbaron ketu */
+
+
+/* Pjesa e sherbimeve */
+
+#service{
+	width: 100%;
+	padding: 80px 30px;
+	background: #efefef;
+}
+
+.service .content{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.service .content .serviceBx{
+	padding: 40px 20px;
+	max-width: 340px;
+	margin: 20px;
+	transition: 0.5s;
+	text-align: center;
+	background: #f5f5f5;
+}
+
+.service .content .serviceBx:hover{
+	background: #0C64DC;
+}
+
+/* FUNDI i pjeses se sherbimeve */
+
+/* Pjesa e kontaktit */
+
+#contact{
+	width: 100%;
+	padding: 80px 30px;
+	background: #efefef;
+}
+
+.contact-info{
+	font-weight: bold;
+	text-align: center;
+}
+
+.contact-info h1{
+	font-size: 50px;
+}
+
+.contact-info p{
+	font-size: 20px;
+	color: #0C64DC;
+}
+
+.container1{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.container1 .contactInfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container1 .contactInfo .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+
+.container1 .contactInfo .box .icon{
+	min-width: 60px;
+	height: 60px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+
+.container1 .contactInfo .box .text{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+}
+
+.container1 .contactInfo .box .text h3{
+	font-weight: 500;
+	color: #0C64DC;
+}
+
+.contactForm{
+	width: 40%;
+	padding: 40px;
+	background: #fff;
+}
+
+.contactForm h2{
+	font-size: 30px;
+	color: #0C64DC;
+	font-weight: 500;
+}
+
+.contactForm .inputBox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+
+.contactForm .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+	color: #0C64DC;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+	width: 100px;
+	background: #00bcd4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+}
+
+@media (max-width: 991px) {
+	.container{
+		padding: 50px;
+	}
+	.container1{
+		flex-direction: column;
+	}
+	.container1 .contactInfo{
+		margin-bottom: 40px;
+	}
+	.container1 .contactInfo, .contactForm {
+		width: 100%;
+	}
+}
+
+/* Ketu mbaron pjesa e kontaktit */
+
+/*  Footeri */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.inner-footer{
+	margin: 0;
+	padding: 0;
+	background-color: #E1E1E1;
+}
+
+.social-links{
+	display: flex;
+}
+
+.social-links ul{
+	padding: 10px;
+	display: flex;
+	width: 300px;
+	height: 30px;
+	margin: auto;
+}
+
+.social-items{
+	list-style: none;
+}
+
+.social-items a{
+	padding: 10px 20px;
+	font-size: 35px;
+	color: #6cccc6;
+	transition: all .25s;
+}
+
+.social-items a:hover{
+	color: #247AF0;
+}
+
+.quick-links{
+	padding: 40px 20px;
+	display: flex;
+	width: 460px;
+	height: 70px;
+	margin: auto;
+
+}
+
+.quick-links ul{
+	display: flex;
+}
+
+.quick-items{
+	list-style: none;
+}
+
+.quick-items a{
+	text-decoration: none;
+	padding: 0px 15px;
+	font-size: 18px;
+	color: white;
+	transition: all .25s;
+}
+
+.quick-items a:hover{
+	color: #247AF0;
+}
+
+.outer-footer{
+	padding: 15px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	background-color: #969393;
+}
+
+/* Mbarimi i footerit */
+
